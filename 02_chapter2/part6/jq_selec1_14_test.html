@@ -6,7 +6,13 @@
 <script src="js/jquery.js"></script>
 <script>
 $(function(){
+	$(".txt1").parents().css({
+		"border" : "2px dashed #00f"
+	});
 
+	$(".txt1").parents("div").css({
+		"border" : "2px dashed #f00"
+	});
 });
 </script>
 </head>
