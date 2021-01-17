@@ -5,15 +5,23 @@
 <title> 문자 객체 </title>
 <script>
 	var str = "Hello Thank you good luck to you";
+	// charAt(인덱스)는 문자열에서 인덱스에 위치한 문자를 가져옴
 	document.write(str.charAt(16), "<br>");
+	document.write(str.charAt(16));
+	// indefOf(문자)는 문자열에서 해당하는 문자가 존재하는 위치를 찾습니다.
 	document.write(str.indexOf("you"), "<br>");
+	document.write(str.indexOf("you"), "<br>");
+	// indefOf(문자, 인덱스)는  문자열에서 인덱스 이후 해당하는 문자가 존재하는 위치를 찾습니다.
 	document.write(str.indexOf("you", 16), "<br>");
 	document.write(str.lastIndexOf("you"), "<br>");
-	document.write(str.lastIndexOf("you", 25), "<br>");
+	document.write(str.lastIndexOf("you", 25), "<br>", "<br>");
+
 	document.write(str.match("luck"), "<br>");
+	document.write(str.match("luck"), "<br>")
 	document.write(str.search("you"), "<br>");
 	document.write(str.substr(21, 4), "<br>");
-	document.write(str.substring(6, 12), "<br>");
+	document.write(str.substring(6, 12), "<br>", "<br>");
+
 	document.write(str.replace("you","me"), "<br>");
 	document.write(str.toLowerCase(), "<br>");
 	document.write(str.toUpperCase(), "<br>");
