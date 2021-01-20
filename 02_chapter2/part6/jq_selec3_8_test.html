@@ -6,7 +6,12 @@
 <script src="js/jquery.js"></script>
 <script>
 $(function( ){
+	var topNum = $("h1").offset().top;
+	console.log(topNum);
+	$(window).scrollTop(topNum);
 
+	var sct = $(window).scrollTop();
+	console.log(sct);
 });
 </script>
 <style>

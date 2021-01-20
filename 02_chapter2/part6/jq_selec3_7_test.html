@@ -9,6 +9,12 @@ $(function( ){
 	var $txt1 = $(".txt_1 span"),
 					$txt2 = $(".txt_2 span"),
 					$box = $(".box");
+	
+	var off_t = $box.offset().top; // document로부터의 top
+	var pos_t = $box.position().top; // 포지션 기준이 되는 요소를 기준으로 top
+
+	$txt1.text(off_t);
+	$txt2.text(pos_t); 
 });
 </script>
 <style>
@@ -23,7 +29,7 @@ $(function( ){
 	.box{
 			width:50px;height:50px;
 			position:absolute;
-			left:100px;top:50px;
+			left:100px;top:60px;
 			background-color:#f00;
 	}
 </style>

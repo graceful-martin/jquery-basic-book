@@ -6,7 +6,20 @@
   <script src="js/jquery.js"></script>
   <script>
   $(function( ){
+    var srcVal = $("#sec_1 img").attr("src");
+    console.log(srcVal);
 
+    var what = $("#sec_1 img").attr("border");
+    console.log(what);
+
+    $("#sec_1 img").attr({
+      "width": "200",
+      "src": srcVal.replace("1.jpg", "2.jpg"),
+      "alt": "바위"
+      }).removeAttr("border");
+
+    what = $("#sec_1 img").attr("border");
+    console.log(what);
   });
   </script>
   </head>

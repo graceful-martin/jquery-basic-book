@@ -6,7 +6,11 @@
 <script src="js/jquery.js"></script>
 <script>
 $(function( ){
-
+	$("strong").unwrap();
+	$(".ct1").wrap("<div />")
+	$(".ct2").wrapAll("<div />")
+	$("li").wrapInner("<h3 />")
+	console.log($("body").html());
 });
 </script>
 <style>
