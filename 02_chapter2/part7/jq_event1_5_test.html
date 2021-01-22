@@ -6,7 +6,18 @@
 <script src="js/jquery.js"></script>
 <script>
 $(function( ) {
+	$(".btn1").on("click", function(e) {
+		e.preventDefault(); //링크로 이동되는 이벤트 차단
+		$(".txt1").css("background-color", "#ff0");
+	});
 
+	$(".btn2").on("click", function() {
+		$(".txt2").css("background-color", "#0ff");
+	});
+
+	$(".btn3").on("dblclick", function() {
+		$(".txt3").css("background-color", "#0ff");
+	});
 });
 </script>
 </head>
